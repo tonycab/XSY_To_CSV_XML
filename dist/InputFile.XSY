@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<VariablesExchangeFile>
+	<fileHeader company="Schneider Automation" product="Control Expert V15.0 - 201016B" dateTime="date_and_time#2023-3-24-12:8:22" content="Fichier source variables" DTDVersion="41"></fileHeader>
+	<contentHeader name="Projet" version="0.0.2" dateTime="date_and_time#2023-3-20-9:5:44"></contentHeader>
+	<dataBlock>
+		<variables name="IO_BALLUFF_A1_F0" typeName="ECH_BALUFF_A1_F0" topologicalAddress="%MW500">
+			<comment>Repartiteur BALUFF - Coté A1</comment>
+		</variables>
+		<variables name="IO_BALLUFF_A2_H0" typeName="ECH_BALUFF_A2_H0" topologicalAddress="%MW600">
+			<comment>Repartiteur BALUFF - Coté A2</comment>
+		</variables>
+		<variables name="IO_BALLUFF_OUTIL" typeName="ECH_BALUFF_OUTIL" topologicalAddress="%MW700">
+			<comment>Repartiteur BALUFF - Mur outil</comment>
+		</variables>
+		<variables name="CELL_CMD" typeName="DDT_CMD_CELL" topologicalAddress="%MW1000"></variables>
+		<variables name="CELL_ETAT" typeName="DDT_ETAT_CELL" topologicalAddress="%MW1010"></variables>
+		<variables name="MVT_BRIDAGE_A1" typeName="DDT_MVT_2POS" topologicalAddress="%MW3000"></variables>
+		<variables name="MVT_BRIDAGE_A2" typeName="DDT_MVT_2POS" topologicalAddress="%MW3001"></variables>
+		<variables name="MVT_PORTE_CHAR_D0" typeName="DDT_MVT_PORTE_CHARGEMENT" topologicalAddress="%MW3002"></variables>
+		<variables name="MVT_TABLE_SEW_A1" typeName="DDT_MVT_AXE_NORD" topologicalAddress="%MW3003"></variables>
+		<variables name="MVT_TABLE_SEW_A2" typeName="DDT_MVT_AXE_NORD" topologicalAddress="%MW3006"></variables>
+		<variables name="MVT_VAR_16V1" typeName="DDT_MVT_VAR" topologicalAddress="%MW3010"></variables>
+		<variables name="MVT_VAR_17V1" typeName="DDT_MVT_VAR" topologicalAddress="%MW3011"></variables>
+		<variables name="MVT_VAR_18V1" typeName="DDT_MVT_VAR" topologicalAddress="%MW3012"></variables>
+		<variables name="MVT_VOLET_A0" typeName="DDT_MVT_VOLET" topologicalAddress="%MW3013"></variables>
+		<variables name="MVT_VOLET_E0" typeName="DDT_MVT_VOLET" topologicalAddress="%MW3014"></variables>
+		<variables name="MVT_VOLET_G0" typeName="DDT_MVT_VOLET" topologicalAddress="%MW3015"></variables>
+		<variables name="MVT_TABLE" typeName="DDT_MVT_TABLE" topologicalAddress="%MW3020"></variables>
+		<variables name="MVT_SATELLITE_A" typeName="DDT_SATELLITE_MVT" topologicalAddress="%MW3021"></variables>
+		<variables name="MVT_SATELLITE_B" typeName="DDT_SATELLITE_MVT" topologicalAddress="%MW3022"></variables>
+		<variables name="ECH_VAR_16V1" typeName="ECH_VAR_ATV340" topologicalAddress="%MW6400"></variables>
+		<variables name="ECH_VAR_17V1" typeName="ECH_VAR_ATV340" topologicalAddress="%MW6500"></variables>
+		<variables name="ECH_VAR_18V1" typeName="ECH_VAR_ATV340" topologicalAddress="%MW6600"></variables>
+		<variables name="ECH_VAR_PORTE_19V1" typeName="ECH_VAR_ATV340" topologicalAddress="%MW6700"></variables>
+		<variables name="ECH_VAR_TABLE_A1_21V1" typeName="ECH_VAR_NORD" topologicalAddress="%MW6800"></variables>
+		<variables name="ECH_VAR_TABLE_A2_24V1" typeName="ECH_VAR_NORD" topologicalAddress="%MW6900"></variables>
+	</dataBlock>
+	<DDTSource DDTName="ECH_BALUFF_A1_F0" version="0.03" dateTime="dt#2021-06-11-08:49:06">
+		<attribute name="TypeSignatureCheckSumString" value="FD58"></attribute>
+		<structure>
+			<variables name="IN" typeName="ECH_BALUFF_A1_F0_IN"></variables>
+			<variables name="OUT" typeName="ECH_BALUFF_A1_F0_OUT"></variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_A1_F0_IN" version="0.03" dateTime="dt#2021-06-11-08:49:05">
+		<attribute name="TypeSignatureCheckSumString" value="204B"></attribute>
+		<structure>
+			<variables name="Word_00" typeName="WORD"></variables>
+			<variables name="I_VERIN_1_BRIDAGE_AVANCE" typeName="BOOL">
+				<comment>Vérin 1 en position avancé - 8SQ1 </comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="X0_01" typeName="BOOL">
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="I_VERIN_1_BRIDAGE_RECULE" typeName="BOOL">
+				<comment>Vérin 1 en position reculé - 8SQ2</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="X0_03" typeName="BOOL">
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="I_VERIN_2_BRIDAGE_AVANCE" typeName="BOOL">
+				<comment>Vérin 2 en position avancé - 8SQ3</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X0_05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="I_VERIN_2_BRIDAGE_RECULE" typeName="BOOL">
+				<comment>Vérin 2 en position reculé - 8SQ4</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X0_07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="I_VERIN_3_BRIDAGE_AVANCE" typeName="BOOL">
+				<comment>Vérin 3 en position avancé - 8SQ5</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X0_09" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="I_VERIN_3_BRIDAGE_RECULE" typeName="BOOL">
+				<comment>Vérin 3 en position reculé - 8SQ6</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X0_11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X0_12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X0_13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X0_14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X0_15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_A1_F0_OUT" version="0.03" dateTime="dt#2021-06-09-12:32:56">
+		<attribute name="TypeSignatureCheckSumString" value="45A1"></attribute>
+		<structure>
+			<variables name="Word_00" typeName="WORD"></variables>
+			<variables name="X0_00" typeName="BOOL">
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="X0_01" typeName="BOOL">
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="X0_02" typeName="BOOL">
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="X0_03" typeName="BOOL">
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X0_04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X0_05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X0_06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X0_07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="X0_08" typeName="BOOL">
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X0_09" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X0_10" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X0_11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X0_12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X0_13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X0_14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X0_15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_A2_H0" version="0.01" dateTime="dt#2021-06-11-11:56:14">
+		<attribute name="TypeSignatureCheckSumString" value="75F2"></attribute>
+		<structure>
+			<variables name="IN" typeName="ECH_BALUFF_A2_H0_IN"></variables>
+			<variables name="OUT" typeName="ECH_BALUFF_A2_H0_OUT"></variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_A2_H0_IN" version="0.02" dateTime="dt#2021-06-11-11:56:14">
+		<attribute name="TypeSignatureCheckSumString" value="204B"></attribute>
+		<structure>
+			<variables name="Word_00" typeName="WORD"></variables>
+			<variables name="I_VERIN_1_BRIDAGE_AVANCE" typeName="BOOL">
+				<comment>Vérin 1 en position avancé - 9SQ1 </comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="X0_01" typeName="BOOL">
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="I_VERIN_1_BRIDAGE_RECULE" typeName="BOOL">
+				<comment>Vérin 1 en position reculé - 9SQ2</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="X0_03" typeName="BOOL">
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="I_VERIN_2_BRIDAGE_AVANCE" typeName="BOOL">
+				<comment>Vérin 2 en position avancé - 9SQ3</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X0_05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="I_VERIN_2_BRIDAGE_RECULE" typeName="BOOL">
+				<comment>Vérin 2 en position reculé - 9SQ4</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X0_07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="I_VERIN_3_BRIDAGE_AVANCE" typeName="BOOL">
+				<comment>Vérin 3 en position avancé - 9SQ6</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X0_09" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="I_VERIN_3_BRIDAGE_RECULE" typeName="BOOL">
+				<comment>Vérin 3 en position reculé - 9SQ6</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X0_11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X0_12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X0_13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X0_14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X0_15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_A2_H0_OUT" version="0.03" dateTime="dt#2021-06-09-12:34:05">
+		<attribute name="TypeSignatureCheckSumString" value="45A1"></attribute>
+		<structure>
+			<variables name="Word_00" typeName="WORD"></variables>
+			<variables name="X0_00" typeName="BOOL">
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="X0_01" typeName="BOOL">
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="X0_02" typeName="BOOL">
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="X0_03" typeName="BOOL">
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X0_04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X0_05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X0_06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X0_07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="X0_08" typeName="BOOL">
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X0_09" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X0_10" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X0_11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X0_12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X0_13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X0_14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X0_15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_OUTIL" version="0.01" dateTime="dt#2023-03-22-10:47:30">
+		<attribute name="TypeSignatureCheckSumString" value="25FD"></attribute>
+		<structure>
+			<variables name="IN" typeName="ECH_BALUFF_OUTIL_IN"></variables>
+			<variables name="OUT" typeName="ECH_BALUFF_OUTIL_OUT"></variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_OUTIL_IN" version="0.09" dateTime="dt#2023-03-22-10:47:20">
+		<attribute name="TypeSignatureCheckSumString" value="79AF"></attribute>
+		<structure>
+			<variables name="Word_00" typeName="WORD"></variables>
+			<variables name="I_OUTIL_1_PRESENT" typeName="BOOL">
+				<comment>Information outil 1 - présent - 7SQ1</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="I_OUTIL_2_PRESENT" typeName="BOOL">
+				<comment>Information outil 2 - présent - 7SQ2</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="I_OUTIL_3_PRESENT" typeName="BOOL">
+				<comment>Information outil 3 - présent - 7SQ3</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="I_OUTIL_4_PRESENT" typeName="BOOL">
+				<comment>Information outil 4 - présent - 7SQ4</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="I_OUTIL_5_PRESENT" typeName="BOOL">
+				<comment>Information outil 5 - présent - 7SQ6</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="I_OUTIL_6_PRESENT" typeName="BOOL">
+				<comment>Information outil 6 - présent - 7SQ7</comment>
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="I_CAPTEUR_DISQUE" typeName="BOOL">
+				<comment>Capteur calcul diamètre disque organique</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X0_07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="X0_08" typeName="BOOL">
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X0_09" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X0_10" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X0_11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X0_12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X0_13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X0_14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X0_15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_BALUFF_OUTIL_OUT" version="0.04" dateTime="dt#2023-03-17-15:29:33">
+		<attribute name="TypeSignatureCheckSumString" value="ED4F"></attribute>
+		<structure>
+			<variables name="Word_00" typeName="WORD"></variables>
+			<variables name="X0_00" typeName="BOOL">
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="X0_01" typeName="BOOL">
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="X0_02" typeName="BOOL">
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="X0_03" typeName="BOOL">
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X0_04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X0_05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X0_06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X0_07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="X0_08" typeName="BOOL">
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X0_09" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X0_10" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X0_11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="Q_EV_REFROIDISSEENT" typeName="BOOL">
+				<comment>Electrovanne refroidissement caméra - 7EV1</comment>
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X0_13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X0_14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X0_15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_CMD_CELL" version="0.06" dateTime="dt#2021-04-18-02:56:20">
+		<attribute name="TypeSignatureCheckSumString" value="2C5E"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="BP_MES" typeName="BOOL">
+				<comment>Bp mise en service</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="BP_MHS" typeName="BOOL">
+				<comment>Bp mise hors service</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="S_MANU" typeName="BOOL">
+				<comment>Selection mode manu</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="S_AUTO" typeName="BOOL">
+				<comment>Selection mode auto</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="BP_DCY" typeName="BOOL">
+				<comment>Bp depart cycle</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="BP_INIT" typeName="BOOL">
+				<comment>Bp initialisation machine</comment>
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="BP_AC" typeName="BOOL">
+				<comment>Bp arret cycle</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="BP_AFC" typeName="BOOL">
+				<comment>Bp arret fin de cycle</comment>
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="BP_VM" typeName="BOOL">
+				<comment>Bp vidage machine</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="BP_InitRobot" typeName="BOOL">
+				<comment>Bp initialisation robot (DCY MAIN)</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="BP_ACK_DEF" typeName="BOOL">
+				<comment>Bp acquitement defaut</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="S_MAINT" typeName="BOOL">
+				<comment>Selecteur maintenance</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="BP_BIM" typeName="BOOL">
+				<comment>Bp bimanuelle</comment>
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="BP_AM" typeName="BOOL">
+				<comment>BP avance / marche</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="BP_RA" typeName="BOOL">
+				<comment>BP recul / arret</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="BP_TEST_LAMP" typeName="BOOL">
+				<comment>Bp Test lampes</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_ETAT_CELL" version="0.07" dateTime="dt#2021-03-29-08:21:02">
+		<attribute name="TypeSignatureCheckSumString" value="13D3"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="MES" typeName="BOOL">
+				<comment>Machine en service</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="MANU" typeName="BOOL">
+				<comment>Mode manu</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="AUTO" typeName="BOOL">
+				<comment>Mode auto</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="INIT" typeName="BOOL">
+				<comment>Mode initialisation</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="AC" typeName="BOOL">
+				<comment>Arret cycle en cours</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="AFC" typeName="BOOL">
+				<comment>Arret fin de cycle en cours</comment>
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="VM" typeName="BOOL">
+				<comment>Vidage machine en cours</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="CI" typeName="BOOL">
+				<comment>Condition initiale</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="CAC" typeName="BOOL">
+				<comment>Condition arret cycle</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="CAFC_ROBOT" typeName="BOOL">
+				<comment>Condition arret fin cycle robot (demande repli)</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="CAFC_CELL" typeName="BOOL">
+				<comment>Condition arret fin cycle cellule (coupure mode AUTO)</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="CAVM" typeName="BOOL">
+				<comment>Condition arret vidage machine ( coupue mode AUTO)</comment>
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="CPR" typeName="BOOL">
+				<comment>Changement de préhenseur robot</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MRC" typeName="BOOL">
+				<comment>Memoire reprise cycle en cours</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="VRCA" typeName="BOOL">
+				<comment>Validation reprise cycle auto</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_MVT_2POS" version="0.06" dateTime="dt#2021-03-29-08:21:21">
+		<attribute name="TypeSignatureCheckSumString" value="6731"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="SA" typeName="BOOL">
+				<comment>Securite mouvement Travail</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="AAA" typeName="BOOL">
+				<comment>Autorisation automatique Travail</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="IA" typeName="BOOL">
+				<comment>Information Travail</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="OA" typeName="BOOL">
+				<comment>Ordre Travail</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="SR" typeName="BOOL">
+				<comment>Securite mouvement Repos</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="AAR" typeName="BOOL">
+				<comment>Autorisation automatique Repos</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="IR" typeName="BOOL">
+				<comment>Information Repos</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="O_R" typeName="BOOL">
+				<comment>Ordre Repos</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="SEMI_AUTO" typeName="BOOL">
+				<comment>Fonctionnement semi automatique</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MS" typeName="BOOL">
+				<comment>Mouvement selectionne</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="BIM" typeName="BOOL">
+				<comment>Fonctionnement avec commande bimanuelle</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_MVT_PORTE_CHARGEMENT" version="0.09" dateTime="dt#2021-05-14-11:10:58">
+		<attribute name="TypeSignatureCheckSumString" value="9202"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="SA" typeName="BOOL">
+				<comment>Securite mouvement avance porte - Coté A1</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="AAA" typeName="BOOL">
+				<comment>Autorisation automatique avance porte - Coté A1</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="IA" typeName="BOOL">
+				<comment>Information porte avancé - Coté A1</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="OA" typeName="BOOL">
+				<comment>Ordre Avance - Coté A1</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="SR" typeName="BOOL">
+				<comment>Securite mouvement recul porte  - Coté A2</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="AAR" typeName="BOOL">
+				<comment>Autorisation automatique recul porte - Coté A2</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="IR" typeName="BOOL">
+				<comment>Information porte reculé - Coté A2</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="O_R" typeName="BOOL">
+				<comment>Ordre Reculé - Coté A2</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MS" typeName="BOOL">
+				<comment>Mouvement selectionne</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="BIM" typeName="BOOL">
+				<comment>Fonctionnement avec commande bimanuelle</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_MVT_AXE_NORD" version="0.16" dateTime="dt#2023-03-21-09:13:27">
+		<attribute name="TypeSignatureCheckSumString" value="5B14"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="SH" typeName="BOOL">
+				<comment>Securite rotation - Horaire</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="AAH" typeName="BOOL">
+				<comment>Autorisation rotation - Horaire</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="IP" typeName="BOOL">
+				<comment>Information axe en positon (Consigne = retour position)</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="OH" typeName="BOOL">
+				<comment>Ordre rotation - horaire</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="REF_OK" typeName="BOOL">
+				<comment>Axe référencé</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="MANU" typeName="BOOL">
+				<comment>Fonctionnement manuel</comment>
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="PRISE_REF" typeName="BOOL">
+				<comment>Fonctionnement prise reference</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="AUTO" typeName="BOOL">
+				<comment>Fonctionnement automatique</comment>
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="SAH" typeName="BOOL">
+				<comment>Securite rotation - Anti Horaire</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="AAAH" typeName="BOOL">
+				<comment>Autorisation rotation - Anti Horaire</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X10" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="OAH" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="POS_0" typeName="BOOL">
+				<comment>Position 0°</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MS" typeName="BOOL">
+				<comment>Mouvement selectionne</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="BIM" typeName="BOOL">
+				<comment>Fonctionnement avec commande bimanuelle</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+			<variables name="STATUS_HOMING" typeName="WORD">
+				<comment>Status du mode homing</comment>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_MVT_VAR" version="0.07" dateTime="dt#2021-05-03-15:46:45">
+		<attribute name="TypeSignatureCheckSumString" value="CD21"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="SM" typeName="BOOL">
+				<comment>Securite mouvement Travail</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="AAM" typeName="BOOL">
+				<comment>Autorisation automatique Travail</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="IM" typeName="BOOL">
+				<comment>Information Travail</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="OM" typeName="BOOL">
+				<comment>Ordre Travail</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="PRECHAUFFE_1_OK" typeName="BOOL">
+				<comment>Prechauffage niveau 1 - OK</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="PRECHAUFFE_2_OK" typeName="BOOL">
+				<comment>Prechauffage niveau 2 - OK</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="RODAGE_OK" typeName="BOOL">
+				<comment>Rodage OK</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MS" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="BIM" typeName="BOOL">
+				<comment>Bi-manuelle</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_MVT_VOLET" version="0.07" dateTime="dt#2021-05-05-15:00:17">
+		<attribute name="TypeSignatureCheckSumString" value="1C3F"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="SD" typeName="BOOL">
+				<comment>Securite mouvement descente</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="AAD" typeName="BOOL">
+				<comment>Autorisation automatique Descente</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="ID" typeName="BOOL">
+				<comment>Information porte descendu </comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="OD" typeName="BOOL">
+				<comment>Ordre descente</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="SM" typeName="BOOL">
+				<comment>Securite mouvement Monte</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="AAM" typeName="BOOL">
+				<comment>Autorisation automatique Monte</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="IM" typeName="BOOL">
+				<comment>Information Monté</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="OM" typeName="BOOL">
+				<comment>Ordre Monte</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X13" typeName="BOOL">
+				<comment>Fonctionnement semi automatique</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MS" typeName="BOOL">
+				<comment>Mouvement selectionne</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_MVT_TABLE" version="0.09" dateTime="dt#2022-11-15-18:06:59">
+		<attribute name="TypeSignatureCheckSumString" value="3116"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="SR_H" typeName="BOOL">
+				<comment>Securité mouvement rotation horaire</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="AAR_H" typeName="BOOL">
+				<comment>Autorisation auto de rotation horaire</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="IR_H" typeName="BOOL">
+				<comment>Information rotation position 0° (Table A cote robot / Table B cote operateur)</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="OR_H" typeName="BOOL">
+				<comment>Ordre de rotation horaire (0 vers 180)</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="SR_AH" typeName="BOOL">
+				<comment>Securité mouvement rotation anti-horaire</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="AAR_AH" typeName="BOOL">
+				<comment>Autor auto de rotation anti-horaire</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="IR_AH" typeName="BOOL">
+				<comment>Information rotation position 180° (Table A cote operateur / Table B cote robot)</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="OR_AH" typeName="BOOL">
+				<comment>Ordre de rotation anti-horaire (180 vers 0)</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="SAH" typeName="BOOL">
+				<comment>2 sens de marche</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MS" typeName="BOOL">
+				<comment>Mouvement selectionne</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="BIM" typeName="BOOL">
+				<comment>Fonctionnement avec une  bimanuelle</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="DDT_SATELLITE_MVT" version="0.08" dateTime="dt#2022-11-15-11:59:38">
+		<attribute name="TypeSignatureCheckSumString" value="8876"></attribute>
+		<structure>
+			<variables name="Word_0" typeName="WORD"></variables>
+			<variables name="SR_H" typeName="BOOL">
+				<comment>Securité mouvement rotation horaire (Sens -)</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="AAR_H" typeName="BOOL">
+				<comment>Autorisation auto de rotation horaire (Sens -)</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="IR_180" typeName="BOOL">
+				<comment>information station 180</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="OR_H" typeName="BOOL">
+				<comment>Ordre de rotation horaire (Sens -)</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="IR_90" typeName="BOOL">
+				<comment>information station 90</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="IR_270" typeName="BOOL">
+				<comment>information station 270</comment>
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="X07" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="SR_AH" typeName="BOOL">
+				<comment>Securité mouvement rotation anti-horaire (Sens +)</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="AAR_AH" typeName="BOOL">
+				<comment>Autorisation auto de rotation anti-horaire (Sens +)</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="IR_0" typeName="BOOL">
+				<comment>information station 0</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="OR_AH" typeName="BOOL">
+				<comment>Ordre de rotation anti-horaire (Sens +)</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="SAH" typeName="BOOL">
+				<comment>2 sens de marche</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="MS" typeName="BOOL">
+				<comment>Mouvement selectionne</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="BIM" typeName="BOOL">
+				<comment>Fonction avec une  bimanu</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_VAR_ATV340" version="0.05" dateTime="dt#2023-03-17-14:12:34">
+		<attribute name="TypeSignatureCheckSumString" value="18F9"></attribute>
+		<structure>
+			<variables name="IN" typeName="ECH_VAR_ATV340_IN"></variables>
+			<variables name="OUT" typeName="ECH_VAR_ATV_340_OUT"></variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_VAR_ATV340_IN" version="0.05" dateTime="dt#2023-03-17-13:50:30">
+		<attribute name="TypeSignatureCheckSumString" value="5555"></attribute>
+		<structure>
+			<variables name="WORD_0" typeName="WORD"></variables>
+			<variables name="ATTENTE_ALILM" typeName="BOOL">
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="PRET" typeName="BOOL">
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="EN_MARCHE" typeName="BOOL">
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="DEFAUT" typeName="BOOL">
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="PUISSANCE_OK" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="ARRET_URGENCE" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="PUIS_VEROUILLE" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="ALARME" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="X08" typeName="BOOL">
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="CONTROL_LOCAL" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="VITESSE_OK" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="VITESSE_NOK" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="STOP_CLAVIER" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="ROTATION" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+			<variables name="VITESSE" typeName="UINT"></variables>
+			<variables name="INTENSITE" typeName="INT"></variables>
+			<variables name="DEFAUT_NUM" typeName="INT"></variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_VAR_ATV_340_OUT" version="0.11" dateTime="dt#2023-03-17-14:12:33">
+		<attribute name="TypeSignatureCheckSumString" value="7DB4"></attribute>
+		<structure>
+			<variables name="WORD_0" typeName="WORD"></variables>
+			<variables name="CDE_PRET" typeName="BOOL">
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="CDE_TENSION" typeName="BOOL">
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="CDE_NO_AU" typeName="BOOL">
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="CDE_MARCHE" typeName="BOOL">
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X04" typeName="BOOL">
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X05" typeName="BOOL">
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06" typeName="BOOL">
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="CDE_ACQUITTEMENT" typeName="BOOL">
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="X08" typeName="BOOL">
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X09" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X10" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="CDE_DIRECTION" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12" typeName="BOOL">
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X13" typeName="BOOL">
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+			<variables name="VITESSE" typeName="UINT"></variables>
+			<variables name="DECELERATION" typeName="UINT"></variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_VAR_NORD" version="0.09" dateTime="dt#2023-03-21-09:04:28">
+		<attribute name="TypeSignatureCheckSumString" value="6D1A"></attribute>
+		<structure>
+			<variables name="IN" typeName="ECH_VAR_NORD_IN"></variables>
+			<variables name="OUT" typeName="ECH_VAR_NORD_OUT"></variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_VAR_NORD_IN" version="0.12" dateTime="dt#2023-03-21-09:04:28">
+		<attribute name="TypeSignatureCheckSumString" value="B60F"></attribute>
+		<structure>
+			<variables name="WORD_0" typeName="WORD">
+				<comment>Mot etat - CIA 402  - [6041H]</comment>
+			</variables>
+			<variables name="READY_SWITCH_ON" typeName="BOOL">
+				<comment>Initialisation terminée, relais de charge activé, tension de sortie désactivée.</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="READY" typeName="BOOL">
+				<comment>Variateur Prêt </comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="OPERATION_ENABLE" typeName="BOOL">
+				<comment>Variateur dévérouillé</comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="FAULT" typeName="BOOL">
+				<comment>Variateur en défaut</comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="VOLTAGE_ENABLED" typeName="BOOL">
+				<comment>Tension OK</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="QUICK_STOP" typeName="BOOL">
+				<comment>Demande Arrêt rapide activé </comment>
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="SWITCH_ON_INHIBIT" typeName="BOOL">
+				<comment>Après la commande « Prêt à fonctionner », le variateur de fréquence passe à l'état « Prêt à démarrer ».</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="WARNING_ACTIVE" typeName="BOOL">
+				<comment>Variateur en état d'alarme</comment>
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="X8_P481" typeName="BOOL">
+				<comment>Entrée libre (Choix utilisateur sur entrée P481)</comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="BUS_CONTROL_ENABLED" typeName="BOOL">
+				<comment>Le maître du bus est invité à prendre le contrôle.</comment>
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X10_POSITION_ATTEINTE_DEPEND_MODE" typeName="BOOL">
+				<comment>|Mode position : Position atteinte]   ////  |Mode reference :  Codage X10X12X13l]</comment>
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="INTERNAL_LIMIT_ACCESS" typeName="BOOL">
+				<comment>Limite interne de la consigne de vitesse dépassée</comment>
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12_DEPEND_MODE" typeName="BOOL">
+				<comment>|Mode position : Nouveau point valide recu]  ////  |Mode reference :  Codage X10X12X13l]</comment>
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X13_DEPEND_MODE" typeName="BOOL">
+				<comment>|Mode position : Erreur de poursuite]  ////  |Mode reference :  Codage X10X12X13l]</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X14" typeName="BOOL">
+				<comment>Libre</comment>
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X15" typeName="BOOL">
+				<comment>Libre</comment>
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+			<variables name="RETOUR_VITESSE" typeName="INT">
+				<comment>Retour Vitesse actuelle - [6041H]</comment>
+			</variables>
+			<variables name="MODE" typeName="BYTE">
+				<comment>Mode de fonctionnement - [6044H]</comment>
+			</variables>
+			<variables name="BYTE5" typeName="BYTE">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="BYTE6" typeName="BYTE">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="BYTE7" typeName="BYTE">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="RETOUR_POSITION" typeName="DINT">
+				<comment>Retour de position - [6064H]</comment>
+			</variables>
+			<variables name="RETOUR_COURANT" typeName="DINT">
+				<comment>Courant moteur - [606C]</comment>
+			</variables>
+			<variables name="WORD3_0" typeName="DINT">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="WORD3_1" typeName="DINT">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="WORD4_0" typeName="DINT">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="WORD4_1" typeName="DINT">
+				<comment>Libre</comment>
+			</variables>
+		</structure>
+	</DDTSource>
+	<DDTSource DDTName="ECH_VAR_NORD_OUT" version="0.13" dateTime="dt#2023-03-20-15:50:57">
+		<attribute name="TypeSignatureCheckSumString" value="C2B3"></attribute>
+		<structure>
+			<variables name="WORD_0" typeName="WORD">
+				<comment>Mot commande - CIA 402  - [6040H]</comment>
+			</variables>
+			<variables name="READY" typeName="BOOL">
+				<comment>Commande variateur - Prêt à fontionner</comment>
+				<attribute name="ExtractBit" value="0"></attribute>
+			</variables>
+			<variables name="DISABLE_VOLTAGE" typeName="BOOL">
+				<comment>Commande mise sous puissance</comment>
+				<attribute name="ExtractBit" value="1"></attribute>
+			</variables>
+			<variables name="QUICK_STOP" typeName="BOOL">
+				<comment>Commande arrêt rapide </comment>
+				<attribute name="ExtractBit" value="2"></attribute>
+			</variables>
+			<variables name="ENABLE_OPERATION" typeName="BOOL">
+				<comment>Commande tension de sortie </comment>
+				<attribute name="ExtractBit" value="3"></attribute>
+			</variables>
+			<variables name="X04_DEPEND_MODE" typeName="BOOL">
+				<comment>|Mode position : Start]   ////  |Mode reference : Start Reference]</comment>
+				<attribute name="ExtractBit" value="4"></attribute>
+			</variables>
+			<variables name="X05_DEPEND_MODE" typeName="BOOL">
+				<comment> |Mode position : Annulation du mouvement ] ////  |Mode reference :  null]</comment>
+				<attribute name="ExtractBit" value="5"></attribute>
+			</variables>
+			<variables name="X06_DEPEND_MODE" typeName="BOOL">
+				<comment>  |Mode position : 0=Position absolu 1=Relative ] ////  |Mode reference :  null]</comment>
+				<attribute name="ExtractBit" value="6"></attribute>
+			</variables>
+			<variables name="ACKNOWLEGDE" typeName="BOOL">
+				<comment>Acquittement défaut </comment>
+				<attribute name="ExtractBit" value="7"></attribute>
+			</variables>
+			<variables name="DEMARRAGE" typeName="BOOL">
+				<comment>Demarrage </comment>
+				<attribute name="ExtractBit" value="8"></attribute>
+			</variables>
+			<variables name="X9" typeName="BOOL">
+				<attribute name="ExtractBit" value="9"></attribute>
+			</variables>
+			<variables name="X10" typeName="BOOL">
+				<attribute name="ExtractBit" value="10"></attribute>
+			</variables>
+			<variables name="X11" typeName="BOOL">
+				<attribute name="ExtractBit" value="11"></attribute>
+			</variables>
+			<variables name="X12_P481_11" typeName="BOOL">
+				<comment>Sortie libre (Choix utilisateur sur entrée P480)</comment>
+				<attribute name="ExtractBit" value="12"></attribute>
+			</variables>
+			<variables name="X13_P481_12" typeName="BOOL">
+				<comment>Sortie libre (Choix utilisateur sur entrée P480)</comment>
+				<attribute name="ExtractBit" value="13"></attribute>
+			</variables>
+			<variables name="X14" typeName="BOOL">
+				<attribute name="ExtractBit" value="14"></attribute>
+			</variables>
+			<variables name="X15" typeName="BOOL">
+				<attribute name="ExtractBit" value="15"></attribute>
+			</variables>
+			<variables name="CONSIGNE_VITESSE" typeName="INT">
+				<comment>Consigne vitesse  - [6042H]</comment>
+			</variables>
+			<variables name="MODE" typeName="BYTE">
+				<comment>Mode de fonctionnement - [6060H]</comment>
+			</variables>
+			<variables name="BYTE5" typeName="BYTE">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="BYTE6" typeName="BYTE">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="BYTE7" typeName="BYTE">
+				<comment>Libre</comment>
+			</variables>
+			<variables name="RAMPE_ACC" typeName="DINT">
+				<comment>Rampe d'acceleration - [6083H]</comment>
+			</variables>
+			<variables name="RAMPE_DCC" typeName="DINT">
+				<comment>Rampe de decceleration - [6084H]</comment>
+			</variables>
+			<variables name="CONSIGNE_POSITION" typeName="DINT">
+				<comment>Consigne de position - [607H]</comment>
+			</variables>
+			<variables name="PROFILE_VITESSE" typeName="DINT">
+				<comment>Profile vitesse - [6081H]</comment>
+			</variables>
+			<variables name="WORD4_0" typeName="DINT"></variables>
+			<variables name="WORD4_1" typeName="DINT"></variables>
+		</structure>
+	</DDTSource>
+</VariablesExchangeFile>
